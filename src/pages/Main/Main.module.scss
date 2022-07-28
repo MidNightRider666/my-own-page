@@ -1,0 +1,104 @@
+
+.MainBox {
+    max-width: 50em;
+    margin: 0 auto;
+    }
+
+    .FElement{
+        position: absolute;
+        height: 100%;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        animation: myanimation 2s;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+
+    h1 {
+        color: aliceblue;
+        font-family: "Times New Roman", Times, serif;
+        line-height: 110%;
+        letter-spacing: -2px;
+        font-size: 3.2em;
+        font-size: 15vm;
+        font-size: 15vmin;
+    }
+
+    // .BElement {
+    //     position: relative;
+    //     display: block;
+    //     overflow: hidden;
+    // }
+
+    .label:after{
+        content: 'Hello!';
+        transition-duration: 2s;
+        animation: fadeIn ease 2s;
+        // animation-fill-mode: forwards;
+    }
+  .label:hover::after{
+        // margin-left: 50px;
+        content: 'About';
+        color: lightblue;
+        margin-left: 50px;
+        transition-duration: 1s;
+    }
+    .labelnext:after{
+        content: 'I am';
+        visibility: hidden;
+        color: blue;
+        transition-duration: 1s;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+    }
+    .labelnext:hover:after{
+        content: "Exp.";
+        color: ghostwhite;
+        margin-left: 50px;
+        transition-duration: 1s;
+    }
+    .labelsecond:after{
+        content: 'Tomas';
+        color: purple;
+        visibility: hidden;
+        transition-duration: 1s;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+    .labelsecond:hover:after{
+        content: "Contact";
+        color: lightblue;
+        margin-left: 50px;
+        transition-duration: 1s;
+    }
+
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            margin-left: -100%;
+            visibility: visible;
+        }
+        to {
+            opacity: 1;
+            margin-left: 0%;
+            height: 0; /* added */
+            visibility: visible;
+        }
+    }
+
+    @keyframes Rotation {
+
+    }
+
+
+
+
+
