@@ -76,7 +76,7 @@
     }
 
     #IDBElement2{
-        color: blue;
+        color: white;
         visibility: hidden;
         transition-duration: 1s;
         animation-name: fadeIn;
@@ -86,7 +86,7 @@
     }
 
     #IDBElement3{
-        color: blue;
+        color: white;
         visibility: hidden;
         transition-duration: 1s;
         animation-name: fadeIn;
@@ -94,6 +94,12 @@
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
+
+    #IDBElement1:hover > #IDBElement2 {
+                color: blue;
+        }
+   
+
 
 
     
