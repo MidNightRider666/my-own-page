@@ -2,17 +2,16 @@
 .MainBox {
     max-width: 50em;
     margin: 0 auto;
-
     }
 
     .FElement{
         position: absolute;
         height: 100%;
-        width: 100px;
         display: -webkit-flex;
         display: flex;
         -webkit-align-items: center;
         align-items: center;
+        animation: myanimation 2s;
         transition: transform 0.8s;
         transform-style: preserve-3d;
     }
@@ -20,7 +19,7 @@
 
     h1 {
         color: aliceblue;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Times New Roman", Times, serif;
         line-height: 110%;
         letter-spacing: -2px;
         font-size: 3.2em;
@@ -29,7 +28,6 @@
     }
     .NavLink {
         text-decoration: none;
-        color: white;
     }
 
     // .BElement {
@@ -38,76 +36,73 @@
     //     overflow: hidden;
     // }
 
-    .box {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-
-    .BElement1{
-        position: absolute;
-    }
-
-    .BElement2 {
-        opacity: 0;
-    }
-
-
-    .BElement1, .BElement2 {
-        transition: all 0.5s ease;
-    }
-
-    .box:hover .BElement1 {
-        opacity: 0;
-    }
-
-    .box:hover .BElement2 {
-        opacity: 1;
-        margin-left: 20%;
-    }
-
-
-    #IDBElement1{
+    .label:after{
+        content: 'Hello!';
         color: white;
-        transition-duration: 1s;
-        animation-name: fadeIn;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
+        transition-duration: 2s;
+        animation: fadeIn ease 2s;
+        // animation-fill-mode: forwards;
     }
 
-    #IDBElement2{
-        color: blue;
+.label:hover::after{
+        // margin-left: 50px;
+        content: 'About';
+        color: lightblue;
+        margin-left: 50px;
+        transition-duration: 1s;
+
+    }
+    .labelnext:after{
+        content: 'I am';
         visibility: hidden;
+        color: blue;
         transition-duration: 1s;
         animation-name: fadeIn;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-delay: 0.5s;
         animation-fill-mode: forwards;
     }
-
-    #IDBElement3{
-        color: blue;
+    .labelnext:hover:after{
+        content: "Exp.";
+        color: ghostwhite;
+        margin-left: 50px;
+        transition-duration: 1s;
+    }
+    .labelsecond:after{
+        content: 'Tomas';
+        color: purple;
         visibility: hidden;
         transition-duration: 1s;
         animation-name: fadeIn;
-        animation-duration: 1s;
+        animation-duration: 2s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
     }
-
+    .labelsecond:hover:after{
+        content: "Contact";
+        color: lightblue;
+        margin-left: 50px;
+        transition-duration: 1s;
+    }
 
     
     @keyframes fadeIn {
         from {
-            margin-left: -200%;
+            opacity: 0;
+            margin-left: -100%;
             visibility: visible;
         }
         to {
-            margin-left: 0%;/* added */
+            opacity: 1;
+            margin-left: 0%;
+            height: 0; /* added */
             visibility: visible;
         }
     }
 
+    @keyframes Rotation {
+
+    }
 
 
 
