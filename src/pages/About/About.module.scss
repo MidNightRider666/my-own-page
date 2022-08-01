@@ -1,3 +1,22 @@
-.color {
+.maxWidth {
+    max-width: 68%;
+    margin: 0 auto;
     color: white;
+}
+
+.maxWidthTopBottom {
+    margin: 35vh 0 30vh 0;
+}
+
+
+.TextBlock{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.textColor {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 150%;
+    font-size: 4em;
 }

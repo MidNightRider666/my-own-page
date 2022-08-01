@@ -8,8 +8,8 @@ function Header() {
     <h1 className={css.wrapper}>
     <div className={css.Header}>
     <NavLink className={css.NavLink} to={"/"}>
-  <div className={css.FrontElement} > Tomas </div > 
-  <div className={css.BackElement} > Tomas.ME </div > 
+  <div className={css.FrontElement} > Back </div > 
+  <div className={css.BackElement}> &lt;&lt;&lt; Back </div > 
   </NavLink>
   </div>
   </h1>

@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom';
 import css from "../Main/Main.module.scss";
 
 function Main() {
+
+
+
+
+
   return (
     <div className={css.MainBox}>
         <div className={css.FElement}>
