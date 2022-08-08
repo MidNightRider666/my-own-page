@@ -1,7 +1,7 @@
 .maxWidth {
     max-width: 68%;
     margin: 0 auto;
-    color: white;
+    color: 	#484848;
 }
 
 .maxWidthTopBottom {
@@ -18,5 +18,67 @@
 .textColor {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 150%;
-    font-size: 4em;
+    font-size: 3.5em;
 }
+.newtextColor {
+    font-size: 2em;
+}
+
+
+.hobies {
+    margin-top: 100px;
+}
+
+.mainflip{
+    margin-top: 30px;
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;
+}
+
+.flipcard {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  
+}
+
+.flipcardinner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flipcard:hover .flipcardinner {
+    transform: rotateY(180deg);
+  }
+
+
+img {
+    mix-blend-mode: multiply;
+}
+
+.flipcardfront, .flipcardback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 9px 9px 9px 9px #999;
+  }
+
+  .flipcardfront {
+    background-color: whitesmoke;
+    border: 1px solid black;
+  }
+
+  .flipcardback  {
+    background-color: gray;
+    color: whitesmoke;
+    transform: rotateY(180deg);
+  }
