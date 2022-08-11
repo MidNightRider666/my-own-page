@@ -17,11 +17,15 @@ function Type() {
     strings={[
         " Programming!",
         " Web Developing!",
-        " Front-End!"
+        " Web Design!",
+        " Front-End!",
+        " Full-Stack",
+        " Software!",
     ]}
     startDelay={2500}
     typeSpeed={150}
     backSpeed={100}
+    shuffle
     loop
     />
     </div>

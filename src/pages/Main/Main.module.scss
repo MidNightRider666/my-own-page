@@ -63,6 +63,8 @@
 
     .box:hover .BElement2 {
         opacity: 1;
+        color: #B22222;
+        font-weight: bold;
         margin-left: 20%;
     }
 
@@ -95,10 +97,7 @@
         animation-fill-mode: forwards;
     }
 
-    #IDBElement1:hover > #IDBElement2 {
-                color: blue;
-        }
-   
+
 
 
 
